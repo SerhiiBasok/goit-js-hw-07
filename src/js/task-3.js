@@ -2,11 +2,11 @@ const nameInput = document.getElementById("name-input");
 const nameOutput = document.getElementById("name-output");
 
 nameInput.addEventListener("input", () => {
-  const trimmedValue = nameInput.value.trim(); // Видалення пробілів з країв введеного тексту
+  const trimmedValue = nameInput.value.trim();
 
   if (trimmedValue === "") {
-    nameOutput.textContent = "Anonymous"; // Якщо введено лише пробіли або пустий рядок
+    nameOutput.textContent = "Anonymous";
   } else {
-    nameOutput.textContent = trimmedValue; // Встановлення значення в span#name-output
+    nameOutput.textContent = trimmedValue;
   }
 });
